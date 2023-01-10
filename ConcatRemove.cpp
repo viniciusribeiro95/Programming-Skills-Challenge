@@ -20,6 +20,7 @@
 #include <iostream>
 #include <algorithm>
 #include <unordered_map>
+#include <limits>
 
 using namespace std;
 
@@ -38,15 +39,29 @@ std::string ConcatRemove( string s, string t, int k)
 
 int main()
 {
-    string s;
-    cout << "Write the initial string: ";
-    cin >> s;
-    string t;
-    cout << "Write target string: ";
-    cin >> t;
+    string s, t;
     int k;
-    cout << "Write the number of operations: ";
-    cin >> k;
+    do
+    {
+        cin.clear();
+        cout << "Write the initial string: ";
+        cin >> s;
+    }while( s.size() < 1 || s.size() > 100 );
+    
+    do
+    {
+        cin.clear();
+        cout << "Write target string: ";
+        cin >> t;
+    }while( t.size() < 1 || t.size() > 100 );
+    
+    do
+    {
+        cin.clear();
+        cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        cout << "Write the number of operations: ";
+        cin >> k;
+    }while( ( int(k) <= 0 || int(k) > 100 ) || !cin.good() );
     
     std::cout << ConcatRemove( s, t, k) << std::endl;
 }
