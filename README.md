@@ -165,3 +165,34 @@ To run the program, you can import the file into the compiler https://onlinegdb.
 g++ stringCount.cpp -o stringCount
 ./stringCount
 ```
+### **Problem 11**
+
+Make a program in C/C++ or Java language that reverses a string informed by the user without using any temporary variable, buffer or any pre-existing function or method for this.
+
+#### **Answer in C++ code: [stringReverse.cpp](stringReverse.cpp)**
+
+I implemented it using only one file, due to the low complexity of the problem, with no need to separate it into .h call files, cpp files, and a main/application for control.
+To run the program, you can import the file into the compiler https://onlinegdb.com, and press run, or if you have an environment configured, follow the following commands:
+
+``` sh
+g++ stringReverse.cpp -o stringReverse
+./stringReverse
+```
+
+Although I have developed a code for this question, also using the string size counter, I believe that just printing the string to the contract would be enough, due to little information in the statement, I decided to make the code presented in [stringReverse.cpp]( stringReverse.cpp).
+
+That alone would suffice:
+
+``` sh
+string str = "String Reverse";
+int i = str.length();
+cout <<"Reversed String: ";
+for(i = i - 1; i >= 0; i--)
+{
+  cout<<str[i];
+}
+cout <<"\n\nOriginal String: " <<str <<"\n\n";
+```
+
+Input: "String Reverse"
+Output: "esreveR gnirtS"
