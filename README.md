@@ -151,3 +151,17 @@ Continuing with relation XYZ
 What are the sequences of commands to read key value 10 and the next 2 records?
 
 #### **Answer: [bqSoftware.sh](bqSoftware.sh)**
+
+### **Problem 10**
+
+Make a program in C/C++ or Java language that calculates the length of a string informed by the user (do not use any pre-existing function or method for this, such as len(), count(), strlen() or lenght());
+
+#### **Answer in C++ code: [stringCount.cpp](stringCount.cpp)**
+
+I implemented it using only one file, due to the low complexity of the problem, with no need to separate it into .h call files, cpp files, and a main/application for control.
+To run the program, you can import the file into the compiler https://onlinegdb.com, and press run, or if you have an environment configured, follow the following commands:
+
+``` sh
+g++ stringCount.cpp -o stringCount
+./stringCount
+```
