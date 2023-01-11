@@ -130,11 +130,13 @@ In the StudentsGrades folder, it contains files that create each table and do th
 Consider a software utility called ‘bq’ that allows the user to read runtime, persistent data structures.
 
 **Problem #1**
+
 I have a relation ABC. 
 
 What are the sequence of commands to determine its structure?
 
 **Problem #2**
+
 I have a relation XYZ.                          
 Its structure is noted below:    
 
@@ -146,6 +148,7 @@ end;
 What are the sequence of commands to read the first and last records of relation XYZ?
 
 **Problem #3**
+
 Continuing with relation XYZ
 
 What are the sequences of commands to read key value 10 and the next 2 records?
@@ -195,4 +198,5 @@ cout <<"\n\nOriginal String: " <<str <<"\n\n";
 ```
 
 Input: "String Reverse"
+
 Output: "esreveR gnirtS"
